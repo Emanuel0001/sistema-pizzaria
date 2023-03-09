@@ -1,0 +1,28 @@
+#icons-sorvetes {
+ color: yellow;
+}
+
+
+.link-sorvetes {
+    border-left: solid 5px yellow;  
+ }
+
+
+@media screen and (max-width: 850px) { 
+    .link-sorvetes {
+        border-left: solid 0px ;  
+     }
+}
+ .menu-princial {
+     width: 92%;
+     height: 100vh;
+     display: inline-block;
+     position: absolute;
+ }
+ 
+ .menu-princial h1 {
+     font-weight: 400;
+     text-align: start;
+     font-size: 30px;
+     margin-left: 20px;
+ }

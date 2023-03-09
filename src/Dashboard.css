@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: red;
+}
+
+.container-app {
+  background-color: rgb(24, 23, 23);
+  height: 100vh;
+}
+.container-menu-lateral {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-lateral {
+ display: inline-block;
+ width: 8%;
+  }
+
+.menu-lateral a {
+  height: 20px;
+  padding: 8px 26px 25px 32px;
+  list-style: none;
+  width: initial;
+  color: white;
+}
+
+li:hover {
+  color: yellow;
+}
+.icone-pizza:visited { color: white; 
+;}
+.icone-pizza:target { 
+  color: yellow; 
+  border-left: solid 3px yellow;
+}
+
+#menu {
+  margin-bottom: -74px;
+  padding: 10px 12px;
+  position: absolute;
+}
+
+.menu-princial {
+  display: inline-block;
+  color: red;
+  height: initial;
+  width: initial;
+}

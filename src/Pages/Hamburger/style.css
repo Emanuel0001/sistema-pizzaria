@@ -1,0 +1,49 @@
+#icons-hamburger {
+    color: yellow;
+   
+}
+.link-hamburger {
+   border-left: solid 5px yellow;  
+}
+
+@media screen and (max-width: 850px) { 
+    .link-hamburger {
+        border-left: solid 0px ;  
+     }
+}
+.menu-princial {
+    width: 92%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.menu-princial h1 {
+    font-weight: 400;
+    text-align: start;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.menu-comerce {
+    padding: 60px 40px;
+    width: 150px;
+}
+
+.menu-comerce h2 {
+    color: white;
+    margin-right: 37px;
+    float: inline-end;
+}
+
+.menu-comerce h3 {
+    color: red;
+    margin-top: -27px;
+    float: inline-end;
+}
+
+.arrow {
+    float: inline-start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
