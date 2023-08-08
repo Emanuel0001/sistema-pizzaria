@@ -4,7 +4,7 @@ import React from 'react';
 import { FaPizzaSlice } from 'react-icons/fa';
 import { FaHamburger } from 'react-icons/fa';
 import { BiCoffeeTogo } from 'react-icons/bi';
-import { FaIceCream } from 'react-icons/fa';
+import { GiBreadSlice } from 'react-icons/gi';
 import { CgMenuLeft } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { IoFastFoodOutline } from 'react-icons/io5'
@@ -116,20 +116,17 @@ function Sucos() {
         <Link to='/'><FaPizzaSlice className='icons' size={40}/></Link>
          <Link to='/hamburger'><FaHamburger className='icons' size={40}/></Link>
          <Link to='/sucos' className='link-sucos'><BiCoffeeTogo id='icons-sucos' size={40}/></Link>
-         <Link to='/sorvetes'><FaIceCream size={40} /></Link>
+         <Link to='/sorvetes'><GiBreadSlice size={40} /></Link>
         </div>
       </div>
       <div className='menu-princial'>
       <div className='menu-comerce'>
-          <IoFastFoodOutline size={50} color="yellow"/>
-          <h2>Food</h2>
-          <h3>Commerce</h3>
+          <IoFastFoodOutline id="icon" size={50} color="yellow" />
+
+          <h2>Pizzaria e Lanchonete</h2>
+          <h3>Brejo Grande</h3>
         </div>
-        <div className='shopping'>
-          <h2>Meus Pedidos</h2>
-          <h3> 03 lanches</h3>
-          <AiOutlineShoppingCart class="svg" size={50} />
-        </div>
+       
         <IoArrowRedo class="arrow" size={30} color="white"/>
         <h1>Sucos</h1></div>
         <div className='container'>

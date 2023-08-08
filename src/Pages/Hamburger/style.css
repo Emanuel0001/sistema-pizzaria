@@ -26,20 +26,24 @@
 }
 
 .menu-comerce {
-    padding: 60px 40px;
-    width: 150px;
+    padding: 81px 0px;
+    width: 100%;
+    text-align: initial;
+    font-size: 20px;
 }
 
 .menu-comerce h2 {
-    color: white;
-    margin-right: 37px;
-    float: inline-end;
+    margin-left: 20px;
 }
 
+#icon {
+    margin-left: 20px;
+}
 .menu-comerce h3 {
     color: red;
-    margin-top: -27px;
     float: inline-end;
+    font-size: 29px;
+    margin-left: 20px;
 }
 
 .arrow {
