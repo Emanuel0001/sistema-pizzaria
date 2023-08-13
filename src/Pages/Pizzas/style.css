@@ -132,10 +132,10 @@
 }
 
 .bloco-add h3 {
-  float: inline-start;
   color: yellow;
   margin-left: 25px;
   margin-top: -10px;
+  text-shadow: 2px 1px white;
   font-size: 30px;
 }
 
