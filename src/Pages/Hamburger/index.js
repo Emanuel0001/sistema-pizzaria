@@ -16,10 +16,13 @@ import { BsCheckCircleFill } from "react-icons/bs";
 import "./style.css";
 import Imagem from "../../images/lanche-hamburger.jpg";
 import hamburger from "../../images/lanche-hamburger.jpg";
-import Xburger from "../../images/lanche-xburguer.png";
+import xFrango from "../../images/x-frango-1564805822.jpg";
 import Xbacon from "../../images/lanche-xbacon.jpg";
 import Misto from "../../images/lanche-misto.jpeg";
-
+import xCalabresa from '../../images/x-calabresa.jpg'
+import Bauru from '../../images/lanche-xburguer.png'
+import Xtudo from '../../images/x-tudo.jpg';
+import Xsalada from '../../images/x-salada-classico.jpeg'
 function Hamburger() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -141,23 +144,87 @@ function Hamburger() {
           <h3>Brejo Grande</h3>
         </div>
         <IoArrowRedo class="arrow" size={30} color="white" />
-        <h1>Hamburger</h1>
+        <h1>Lanches</h1>
       </div>
       <div className="container">
         <div className="container-blocos">
+        <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>X-Salada</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={Xsalada}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão Hamburguer, Hamburguer, Presunto, Queijo Mussarela, presunto, ovo, milho, alface, tomate, batata palha e Maionese.</p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 12,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
+        <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>X-Tudo</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={Xtudo}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão Hamburguer, Hamburguer, Presunto, Queijo Mussarela, calabresa, bacon, frango, milho, catupiry, ovo, alface, tomate, batata palha e Maionese.</p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 18,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
+         
           <div className="bloco">
             <div className="bloco-title">
               {" "}
-              <h3>hamburger</h3>
+              <h3>X-Especial</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={Xtudo}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão Hamburguer, 2 Hamburguer, 2 ovo, Queijo mussarela, presunto, calabresa, frango, bacon, catupiry, milho, alface, tomate, batata palha e Maionese.</p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 20,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
+          <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>X-burger</h3>
             </div>
             <div className="bloco-body-container">
               <img src={hamburger}></img>
             </div>
             <div className="bloco-descricao">
-              <p>Pão, Hamburguer, Alface, Tomate, Batata e palha</p>
+              <p>Pão Hamburguer, Hamburguer, Presunto, Queijo, Mussarela, Alface, Tomate, Batata e palha e Maionese.</p>
             </div>
             <div className="bloco-add">
-              <h3>$ 43,25</h3>
+              <h3>$ 12,00</h3>
               <IoMdAddCircle
                 class="icone-add"
                 onClick={openModalAddItem}
@@ -170,16 +237,37 @@ function Hamburger() {
           <div className="bloco">
             <div className="bloco-title">
               {" "}
-              <h3>X BURGUER</h3>
+              <h3>X-Frango</h3>
             </div>
             <div className="bloco-body-container">
-              <img src={Xburger}></img>
+              <img src={xFrango}></img>
             </div>
             <div className="bloco-descricao">
-              <p>Pão, Hamburguer, Alface, Queijo, tomate e Batata palha</p>
+              <p>Pão Hamburguer, File de peito, Ovo, Queijo mussarela, Alface, Queijo mussarela, tomate, Batata palha e maionese</p>
             </div>
             <div className="bloco-add">
-              <h3>$ 43,25</h3>
+              <h3>$ 15,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
+          <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>X-Calabresa</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={xCalabresa}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão Hamburguer, Hamburger, Queijo mussarela, Presunto, Ovo, Calabresa, Alface, tomate, Batata palha e maionese</p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 15,00</h3>
               <IoMdAddCircle
                 class="icone-add"
                 onClick={openModalAddItem}
@@ -190,19 +278,40 @@ function Hamburger() {
           </div>
         </div>
         <div className="container-blocos">
+        <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>Bauru de Carne</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={Bauru}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão de Hamburger, Carne, Queijo mussarela, presunto, Alface, Tomate, Batata Palha e Maionese. </p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 17,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
           <div className="bloco">
             <div className="bloco-title">
               {" "}
-              <h3>MISTO</h3>
+              <h3>X-Churrasco</h3>
             </div>
             <div className="bloco-body-container">
-              <img src={Misto}></img>
+              <img src={Bauru}></img>
             </div>
             <div className="bloco-descricao">
-              <p>Pão de forma, Presunto e 02 queijos</p>
+              <p>Pão de Hamburger, Carne, Queijo mussarela, presunto, Ovo, Bacon, Milho, Alface, Tomate, Batata Palha e Maionese. </p>
             </div>
             <div className="bloco-add">
-              <h3>$ 43,25</h3>
+              <h3>$ 18,00</h3>
               <IoMdAddCircle
                 class="icone-add"
                 onClick={openModalAddItem}
@@ -220,10 +329,31 @@ function Hamburger() {
               <img src={Xbacon}></img>
             </div>
             <div className="bloco-descricao">
-              <p>Pão, Hamburguer, Queijo, Alface, Tomate e Batata palha</p>
+              <p>Pão de Hamburger, Hamburger, queijo mussarela, Presunto, bacon, ovo, alface, tomate, batata palha e Maionese.</p>
             </div>
             <div className="bloco-add">
-              <h3>$ 43,25</h3>
+              <h3>$ 15,00</h3>
+              <IoMdAddCircle
+                class="icone-add"
+                onClick={openModalAddItem}
+                size={50}
+                color="yellow"
+              />
+            </div>
+          </div>
+          <div className="bloco">
+            <div className="bloco-title">
+              {" "}
+              <h3>MISTO</h3>
+            </div>
+            <div className="bloco-body-container">
+              <img src={Misto}></img>
+            </div>
+            <div className="bloco-descricao">
+              <p>Pão de Hamburger, Queijo mussarela, presunto e Catupiry.</p>
+            </div>
+            <div className="bloco-add">
+              <h3>$ 15,00</h3>
               <IoMdAddCircle
                 class="icone-add"
                 onClick={openModalAddItem}

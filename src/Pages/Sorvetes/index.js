@@ -15,12 +15,21 @@ import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { BsCheckCircleFill } from 'react-icons/bs'
 
 import './style.css'
-import Imagem from '../../images/lanche-hamburger.jpg'
-import sorveteFlocos from '../../images/sorvete-Flocos.jpg'
-import sorveteChocolate from '../../images/sorvete-chocolate.jpg'
-import sorveteBaunilha from '../../images/sorvete-Baunilha.jpg'
-import sorveteNapolitano from '../../images/sorvete-Napolitano.jpg'
-
+import Imagem from '../../images/lanche-hamburger.jpg';
+import pastelQueijo from '../../images/pastelQueijo.jpg';
+import sorveteChocolate from '../../images/sorvete-chocolate.jpg';
+import pastelQueijoMilho from '../../images/queijoCatupiryMilho.jpeg';
+import pastelCarne from '../../images/pastel-de-carne1.jpg';
+import pastelCarneCatupiry from '../../images/pastelCarneCatupiry.jpg';
+import pastelFrango from '../../images/pastel-frango.jpg';
+import pastelFrangoCatupiry from '../../images/pastel-frango-catupiry.jpg';
+import pastelFrangoQueijo from '../../images/pastelFrangoQueijo.jpg';
+import pastelFrangoMilho from '../../images/pastelFrangoMilho.jpg';
+import pastelBacon from '../../images/pastelBacon.jpg';
+import pastelPizza from  '../../images/pastelPizza.jpg';
+import pastelCalabresa from  '../../images/pastel-de-calabresa-com.jpg';
+import pastelPeru from '../../images/pastelPeru.jpg'
+import pastelCarneSeca from '../../images/pastelCarneSeca.jpg'
 function Sorvetes() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -131,46 +140,178 @@ function Sorvetes() {
         <div className='container'>
         <div className='container-blocos'>
           <div className='bloco'>
-            <div className='bloco-title'> <h3>Flocos</h3></div>
-            <div className='bloco-body-container'><img src={sorveteFlocos}></img></div>
-            <div className='bloco-descricao'><p>sorvete flocos com cobertura - 500ml</p></div>
+            <div className='bloco-title'> <h3>Queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelQueijo}></img></div>
+            <div className='bloco-descricao'><p>Quejo mussarela, uma delícia!</p></div>
             <div className='bloco-add'>
-              <h3>$ 10,00</h3>
+              <h3>$ 7,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
-
           <div className='bloco'>
-            <div className='bloco-title'> <h3>Baunilha</h3></div>
-            <div className='bloco-body-container'><img src={sorveteBaunilha}></img></div>
-            <div className='bloco-descricao'><p>sorvete baunilha com cobertura - 500ml</p></div>
+            <div className='bloco-title'> <h3>Queijo com Catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelQueijo}></img></div>
+            <div className='bloco-descricao'><p>Quejo mussarela com catupiry, uma delícia!</p></div>
             <div className='bloco-add'>
-              <h3>$ 10,00</h3>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Queijo com Catupiry e Milho</h3></div>
+            <div className='bloco-body-container'><img src={pastelQueijoMilho}></img></div>
+            <div className='bloco-descricao'><p>Quejo mussarela com catupiry e milho, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarne}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne moída, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne com catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarneCatupiry}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne moída com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne com queijo e milho</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarneCatupiry}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne moída com queijo e milho, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Frango</h3></div>
+            <div className='bloco-body-container'><img src={pastelFrango}></img></div>
+            <div className='bloco-descricao'><p>Pastel de frango desfiado, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Frango Catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelFrangoCatupiry}></img></div>
+            <div className='bloco-descricao'><p>Pastel de frango desfiado com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Frango Queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelFrangoQueijo}></img></div>
+            <div className='bloco-descricao'><p>Pastel de frango desfiado com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Frango com catupiry e milho</h3></div>
+            <div className='bloco-body-container'><img src={pastelFrangoMilho}></img></div>
+            <div className='bloco-descricao'><p>Pastel de frango desfiado com catupiry e milho, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>bacon com queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelBacon}></img></div>
+            <div className='bloco-descricao'><p>Pastel de bacon com queijo, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>bacon com Catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelBacon}></img></div>
+            <div className='bloco-descricao'><p>Pastel de bacon com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Pizza</h3></div>
+            <div className='bloco-body-container'><img src={pastelPizza}></img></div>
+            <div className='bloco-descricao'><p>Pastel de Presunto, queijo e orégano e tomate, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>calabresa com queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelCalabresa}></img></div>
+            <div className='bloco-descricao'><p>Pastel de calabresa e queijo, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>calabresa com catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelCalabresa}></img></div>
+            <div className='bloco-descricao'><p>Pastel de calabresa com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Peito de peru com Queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelPeru}></img></div>
+            <div className='bloco-descricao'><p>Pastel de Peito de peru com queijo, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Peito de peru com Catupiry</h3></div>
+            <div className='bloco-body-container'><img src={pastelPeru}></img></div>
+            <div className='bloco-descricao'><p>Pastel de Peito de peru com catupiry, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne seca com queijo e cebola</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarneSeca}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne seca com queijo e cebola, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne seca com catupiry e cebola</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarneSeca}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne seca com catupiry e cebola, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
         </div>
-        <div className='container-blocos'>
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>Chocolate</h3></div>
-            <div className='bloco-body-container'><img src={sorveteChocolate}></img></div>
-            <div className='bloco-descricao'><p>Sorvete chocolate com cobertura - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 10,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>napolitano</h3></div>
-            <div className='bloco-body-container'><img src={sorveteNapolitano}></img></div>
-            <div className='bloco-descricao'><p>sorvete napolitano com cobertura - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 10,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-        </div>
-          
+        
           <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
