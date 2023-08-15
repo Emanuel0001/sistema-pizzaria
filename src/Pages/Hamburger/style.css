@@ -23,6 +23,7 @@
     text-align: start;
     font-size: 30px;
     margin-left: 20px;
+    text-shadow: 1px 1px red;
 }
 
 .menu-comerce {
@@ -33,7 +34,9 @@
 }
 
 .menu-comerce h2 {
+    color: white;
     margin-left: 20px;
+    text-shadow: 1px 1px red;
 }
 
 #icon {
@@ -41,9 +44,9 @@
 }
 .menu-comerce h3 {
     color: red;
-    float: inline-end;
     font-size: 29px;
     margin-left: 20px;
+    text-shadow: 1px 1px white;
 }
 
 .arrow {

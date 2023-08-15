@@ -15,12 +15,14 @@ import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { BsCheckCircleFill } from 'react-icons/bs'
 
 import './style.css' 
-import Imagem from '../../images/lanche-hamburger.jpg'
-import sucoGoiaba from '../../images/suco-Goiaba.jpeg'
-import sucoAcerola from '../../images/Suco-de-acerola.jpg'
-import sucoMaracuja from '../../images/Suco-Maracuja.jpg'
-import sucoTamarindo from '../../images/Suco-de-tamarindo.jpg'
-
+import Imagem from '../../images/lanche-hamburger.jpg';
+import sucoGoiaba from '../../images/suco-Goiaba.jpeg';
+import sucoAcerola from '../../images/Suco-de-acerola.jpg';
+import sucoMaracuja from '../../images/Suco-Maracuja.jpg';
+import sucoAbacaxi from '../../images/sucoAbacaxi.jpg';
+import sucoCoquinho from '../../images/sucoCoquinho.jpg';
+import sucoLimao from '../../images/sucoLimao.jpg';
+import sucoLaranja from '../../images/sucoLaranja.jpg';
 
 function Sucos() {
   let subtitle;
@@ -162,9 +164,36 @@ function Sucos() {
             </div>
           </div>
           <div className='bloco'>
-            <div className='bloco-title'> <h3>tamarindo</h3></div>
-            <div className='bloco-body-container'><img src={sucoTamarindo}></img></div>
-            <div className='bloco-descricao'><p>Suco de tamarindo - 500ml</p></div>
+            <div className='bloco-title'> <h3>Abacaxi</h3></div>
+            <div className='bloco-body-container'><img src={sucoAbacaxi}></img></div>
+            <div className='bloco-descricao'><p>Suco de Abacaxi - 500ml</p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Coquinho do Mato</h3></div>
+            <div className='bloco-body-container'><img src={sucoCoquinho}></img></div>
+            <div className='bloco-descricao'><p>Suco de coquinho azedo - 500ml</p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Suco de Limão</h3></div>
+            <div className='bloco-body-container'><img src={sucoLimao}></img></div>
+            <div className='bloco-descricao'><p>Suco de limão - 500ml</p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Suco de Laranja</h3></div>
+            <div className='bloco-body-container'><img src={sucoLaranja}></img></div>
+            <div className='bloco-descricao'><p>Suco de Laranja azedo - 500ml</p></div>
             <div className='bloco-add'>
               <h3>$ 5,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
