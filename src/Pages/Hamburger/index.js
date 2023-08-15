@@ -362,6 +362,10 @@ function Hamburger() {
               />
             </div>
           </div>
+          <footer className='rodape'>
+             <h1>Emanuel Hitallo © 2023</h1>
+             <h1>Engenheiro de Software</h1>
+          </footer>
         </div>
 
         <Modal

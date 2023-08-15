@@ -199,6 +199,10 @@ function Sucos() {
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
+          <footer className='rodape'>
+             <h1>Emanuel Hitallo © 2023</h1>
+             <h1>Engenheiro de Software</h1>
+          </footer>
         </div>
           <Modal
             isOpen={modalIsOpen}
