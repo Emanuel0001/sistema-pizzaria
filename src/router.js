@@ -4,7 +4,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 import DashBoard from "./Dashboard";
 import Pizza from "./Pages/Pizzas/index"
 import Hamburger from "./Pages/Hamburger/index"
-import Sorvetes from "./Pages/Sorvetes/index"
+import Pasteis from "./Pages/Pasteis/index"
 import Sucos from "./Pages/Sucos/index"
 
   const router = () => {
@@ -12,7 +12,7 @@ import Sucos from "./Pages/Sucos/index"
       <BrowserRouter>
       <Route component = { Pizza }  path="/" exact/>
       <Route component = { Hamburger }  path="/hamburger" />
-      <Route component = { Sorvetes }  path="/sorvetes" />
+      <Route component = { Pasteis }  path="/pasteis" />
       <Route component = { Sucos }  path="/sucos" />
       </BrowserRouter>
     )

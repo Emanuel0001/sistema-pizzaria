@@ -143,7 +143,7 @@ function Pizza() {
           <Link to='/' className='link-pizza'><FaPizzaSlice id='icons-pizza' size={40} /></Link>
           <Link to='/hamburger'><FaHamburger size={40} /></Link>
           <Link to='/sucos'><BiCoffeeTogo size={40} /></Link>
-          <Link to='/sorvetes'><GiBreadSlice size={40} /></Link>
+          <Link to='/pasteis'><GiBreadSlice size={40} /></Link>
         </div>
       </div>
       <div className='menu-princial'>

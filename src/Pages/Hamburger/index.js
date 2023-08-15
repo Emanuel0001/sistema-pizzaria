@@ -132,7 +132,7 @@ function Hamburger() {
           <Link to="/sucos">
             <BiCoffeeTogo size={40} />
           </Link>
-          <Link to="/sorvetes">
+          <Link to="/pasteis">
             <GiBreadSlice size={40} />
           </Link>
         </div>

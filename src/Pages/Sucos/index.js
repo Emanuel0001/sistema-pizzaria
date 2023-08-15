@@ -118,7 +118,7 @@ function Sucos() {
         <Link to='/'><FaPizzaSlice className='icons' size={40}/></Link>
          <Link to='/hamburger'><FaHamburger className='icons' size={40}/></Link>
          <Link to='/sucos' className='link-sucos'><BiCoffeeTogo id='icons-sucos' size={40}/></Link>
-         <Link to='/sorvetes'><GiBreadSlice size={40} /></Link>
+         <Link to='/pasteis'><GiBreadSlice size={40} /></Link>
         </div>
       </div>
       <div className='menu-princial'>
