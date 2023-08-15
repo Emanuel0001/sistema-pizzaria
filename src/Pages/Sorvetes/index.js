@@ -313,6 +313,7 @@ function Sorvetes() {
           <footer className='rodape'>
              <h1>Emanuel Hitallo © 2023</h1>
              <h1>Engenheiro de Software</h1>
+             <h1>{"(38) 99735-2319"}</h1>
           </footer>
         </div>
         
