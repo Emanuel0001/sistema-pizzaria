@@ -5,6 +5,9 @@
 .link-pizza {
   border-left: solid 5px yellow;
 }
+body {
+  background-color: rgb(24, 23, 23);;
+}
 
 .menu-princial {
   width: 100%;
