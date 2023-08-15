@@ -361,9 +361,8 @@ td {
 
 @media screen and (max-width: 550px) {
   .bloco {
-    width: 380px;
-    margin-left: 1px;
-
+    width: 367px;
+    margin-left: 7px;
   }
   .container {
     background-color: rgb(24, 23, 23);
