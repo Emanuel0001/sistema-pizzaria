@@ -24,7 +24,14 @@ import sucoAbacaxi from '../../images/sucoAbacaxi.jpg';
 import sucoCoquinho from '../../images/sucoCoquinho.jpg';
 import sucoLimao from '../../images/sucoLimao.jpg';
 import sucoLaranja from '../../images/sucoLaranja.jpg';
-
+import coca2l from '../../images/coca2l.jpg';
+import guarana from '../../images/guarana.jpg'
+import fanta2l from '../../images/fanta2l.jpg'
+import cocaLata from '../../images/cocaLata.jpg'
+import miniRefri from '../../images/miniRefri.jpg';
+import skolLata from '../../images/skolLata.jpg';
+import subZero from  '../../images/subZeroLata.jpg';
+import glacialLata from  '../../images/glacialLata.jpg';
 function Sucos() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -199,6 +206,92 @@ function Sucos() {
             <div className='bloco-descricao'><p>Suco de Laranja azedo - 500ml</p></div>
             <div className='bloco-add'>
               <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+
+        <div className='menu-comerce'>
+          
+          <IoArrowRedo class="arrow" size={30} color="white" />
+          <h1 id='doces'>Bebidas</h1></div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Coca 2L</h3></div>
+            <div className='bloco-body-container'><img src={coca2l}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 13,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Coca 1L</h3></div>
+            <div className='bloco-body-container'><img src={coca2l}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Coca Lata</h3></div>
+            <div className='bloco-body-container'><img src={cocaLata}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Fanta 2L</h3></div>
+            <div className='bloco-body-container'><img src={fanta2l}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 13,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Guaraná 2L</h3></div>
+            <div className='bloco-body-container'><img src={guarana}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 10,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Picttulinha</h3></div>
+            <div className='bloco-body-container'><img src={miniRefri}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 2,50</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Skol 350Ml</h3></div>
+            <div className='bloco-body-container'><img src={skolLata}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>SubZero 350Ml</h3></div>
+            <div className='bloco-body-container'><img src={subZero}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 5,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Glacial 350Ml</h3></div>
+            <div className='bloco-body-container'><img src={glacialLata}></img></div>
+            <div className='bloco-descricao'><p></p></div>
+            <div className='bloco-add'>
+              <h3>$ 4,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>

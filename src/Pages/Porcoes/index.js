@@ -114,9 +114,9 @@ function Porcoes() {
         <div className='container-menu-lateral'>
         <Link to='/'><FaPizzaSlice className='icons' size={40}/></Link>
          <Link to='/hamburger'><FaHamburger className='icons' size={40}/></Link>
-         <Link to='/sucos' ><BiCoffeeTogo id='icons-sucos' size={40}/></Link>
+         <Link to='/sucos' ><BiCoffeeTogo size={40}/></Link>
          <Link to='/pasteis'><GiBreadSlice size={40} /></Link>
-         <Link to="/porcoes" className='link-porcoes'> <GiFrenchFries size={40} /></Link>
+         <Link to="/porcoes" className='link-porcoes'> <GiFrenchFries  id='icons-sucos' size={40} /></Link>
 
         </div>
       </div>
