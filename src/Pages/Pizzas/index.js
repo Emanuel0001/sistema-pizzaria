@@ -165,7 +165,7 @@ function Pizza() {
             <div className='bloco'>
             <div className='bloco-title'> <h3>Frango com Catupiry</h3></div>
             <div className='bloco-body-container'><img src={pizzaBolonhesa}></img></div>
-            <div className='bloco-descricao'><p>Queijo Mussarela, frango desfiado, milho e catupiry e tomate, uma delicia!</p></div>
+            <div className='bloco-descricao'><p>Queijo Mussarela, frango desfiado, milho e catupiry, uma delicia!</p></div>
             <div className='bloco-add'>
               <h3>G: $43,00 & P: $33,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
