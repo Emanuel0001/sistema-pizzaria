@@ -17,15 +17,11 @@ import { GiFrenchFries } from "react-icons/gi";
 
 import './style.css' 
 import Imagem from '../../images/lanche-hamburger.jpg';
-import sucoGoiaba from '../../images/suco-Goiaba.jpeg';
-import sucoAcerola from '../../images/Suco-de-acerola.jpg';
-import sucoMaracuja from '../../images/Suco-Maracuja.jpg';
-import sucoAbacaxi from '../../images/sucoAbacaxi.jpg';
-import sucoCoquinho from '../../images/sucoCoquinho.jpg';
-import sucoLimao from '../../images/sucoLimao.jpg';
-import sucoLaranja from '../../images/sucoLaranja.jpg';
+import porcaoBatata from '../../images/porcaoBatata.jpg';
+import porcaoCalabresa from  '../../images/porcaoCalabresa.jpg';
+import porcaoBatataCalabresa from '../../images/porcaoBatataCalabresa.png'
 
-function Sucos() {
+function Porcoes() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [modalAddOpen, setIsModalAddOpen] = React.useState(false);
@@ -118,9 +114,9 @@ function Sucos() {
         <div className='container-menu-lateral'>
         <Link to='/'><FaPizzaSlice className='icons' size={40}/></Link>
          <Link to='/hamburger'><FaHamburger className='icons' size={40}/></Link>
-         <Link to='/sucos' className='link-sucos'><BiCoffeeTogo id='icons-sucos' size={40}/></Link>
+         <Link to='/sucos' ><BiCoffeeTogo id='icons-sucos' size={40}/></Link>
          <Link to='/pasteis'><GiBreadSlice size={40} /></Link>
-         <Link to="/porcoes"> <GiFrenchFries size={40} /></Link>
+         <Link to="/porcoes" className='link-porcoes'> <GiFrenchFries size={40} /></Link>
 
         </div>
       </div>
@@ -133,72 +129,33 @@ function Sucos() {
         </div>
        
         <IoArrowRedo class="arrow" size={30} color="white"/>
-        <h1>Sucos</h1></div>
+        <h1>Porções</h1></div>
         <div className='container'>
         <div className='container-blocos'>
           <div className='bloco'>
-            <div className='bloco-title'> <h3>goiaba</h3></div>
-            <div className='bloco-body-container'><img src={sucoGoiaba}></img></div>
-            <div className='bloco-descricao'><p>Goiaba com leite - 500ml</p></div>
+            <div className='bloco-title'> <h3>Batata</h3></div>
+            <div className='bloco-body-container'><img src={porcaoBatata}></img></div>
+            <div className='bloco-descricao'><p>Porção de batata 400g</p></div>
             <div className='bloco-add'>
-              <h3>$ 5,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>Acerola</h3></div>
-            <div className='bloco-body-container'><img src={sucoAcerola}></img></div>
-            <div className='bloco-descricao'><p>Acerola com leite - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 5,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-        </div>
-        <div className='container-blocos'>
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>Maracujá</h3></div>
-            <div className='bloco-body-container'><img src={sucoMaracuja}></img></div>
-            <div className='bloco-descricao'><p>Suco de Maracujá - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 5,00</h3>
+              <h3>$ 15,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
           <div className='bloco'>
-            <div className='bloco-title'> <h3>Abacaxi</h3></div>
-            <div className='bloco-body-container'><img src={sucoAbacaxi}></img></div>
-            <div className='bloco-descricao'><p>Suco de Abacaxi - 500ml</p></div>
+            <div className='bloco-title'> <h3>Batata com calabresa e cebola</h3></div>
+            <div className='bloco-body-container'><img src={porcaoBatataCalabresa}></img></div>
+            <div className='bloco-descricao'><p>Porção de batata com calabresa e cebola.</p></div>
             <div className='bloco-add'>
-              <h3>$ 5,00</h3>
+              <h3>$ 25,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
           <div className='bloco'>
-            <div className='bloco-title'> <h3>Coquinho do Mato</h3></div>
-            <div className='bloco-body-container'><img src={sucoCoquinho}></img></div>
-            <div className='bloco-descricao'><p>Suco de coquinho azedo - 500ml</p></div>
+            <div className='bloco-title'> <h3>Calabresa Acebolada</h3></div>
+            <div className='bloco-body-container'><img src={porcaoCalabresa}></img></div>
+            <div className='bloco-descricao'><p>Porção de mandioca e cebola.</p></div>
             <div className='bloco-add'>
-              <h3>$ 5,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>Suco de Limão</h3></div>
-            <div className='bloco-body-container'><img src={sucoLimao}></img></div>
-            <div className='bloco-descricao'><p>Suco de limão - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 5,00</h3>
-              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
-            </div>
-          </div>
-          <div className='bloco'>
-            <div className='bloco-title'> <h3>Suco de Laranja</h3></div>
-            <div className='bloco-body-container'><img src={sucoLaranja}></img></div>
-            <div className='bloco-descricao'><p>Suco de Laranja azedo - 500ml</p></div>
-            <div className='bloco-add'>
-              <h3>$ 5,00</h3>
+              <h3>$ 15,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
@@ -255,4 +212,4 @@ function Sucos() {
   );
 }
 
-export default Sucos;
+export default Porcoes;

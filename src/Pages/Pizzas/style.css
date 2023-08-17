@@ -358,6 +358,10 @@ td {
     border-bottom: solid 5px yellow;
     border-left: 0px solid;
   }
+  .link-porcoes {
+    border-bottom: solid 5px yellow;
+    border-left: 0px solid;
+  }
   .link-sucos {
     border-bottom: solid 5px yellow;
     border-left: 0px;
@@ -365,7 +369,7 @@ td {
 
   .menu-lateral a {
     height: 20px;
-    padding: 0px 17px 4px 24px;
+    padding: 0px 16px 7px 20px;
   }
 
   .shopping {

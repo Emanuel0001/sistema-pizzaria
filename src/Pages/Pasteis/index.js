@@ -13,11 +13,16 @@ import { IoArrowRedo } from 'react-icons/io5'
 import { IoMdAddCircle } from 'react-icons/io'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { BsCheckCircleFill } from 'react-icons/bs'
+import { GiFrenchFries } from "react-icons/gi";
 
 import './style.css'
 import Imagem from '../../images/lanche-hamburger.jpg';
 import pastelQueijo from '../../images/pastelQueijo.jpg';
-import sorveteChocolate from '../../images/sorvete-chocolate.jpg';
+import pastelBrigadeiro from '../../images/pastelBrigadeiro.jpg';
+import pastelPrestigio from '../../images/pastelPrestigio.jpeg';
+import pastelBanana from '../../images/pastelBanana.jpg';
+import pastelRomeu from '../../images/pastelRomeuJulieta.jpg';
+import pastelChocoBanana from '../../images/pastelChocoBanana.jpg'
 import pastelQueijoMilho from '../../images/queijoCatupiryMilho.jpeg';
 import pastelCarne from '../../images/pastel-de-carne1.jpg';
 import pastelCarneCatupiry from '../../images/pastelCarneCatupiry.jpg';
@@ -125,7 +130,8 @@ function Sorvetes() {
           <Link to='/'><FaPizzaSlice size={40} /></Link>
           <Link to='/hamburger' ><FaHamburger size={40} /></Link>
           <Link to='/sucos'><BiCoffeeTogo size={40} /></Link>
-          <Link to='/sorvetes' className='link-sorvetes'><GiBreadSlice id='icons-sorvetes' size={40} /></Link>
+          <Link to='/pasteis' className='link-sorvetes'><GiBreadSlice id='icons-sorvetes' size={40} /></Link>
+          <Link to="/porcoes"> <GiFrenchFries size={40} /></Link>
         </div>
       </div>
       <div className='menu-princial'>
@@ -170,6 +176,15 @@ function Sorvetes() {
             <div className='bloco-title'> <h3>Carne</h3></div>
             <div className='bloco-body-container'><img src={pastelCarne}></img></div>
             <div className='bloco-descricao'><p>Pastel de carne moída, uma delícia!</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Carne com Queijo</h3></div>
+            <div className='bloco-body-container'><img src={pastelCarneCatupiry}></img></div>
+            <div className='bloco-descricao'><p>Pastel de carne moída com queijio, uma delícia!</p></div>
             <div className='bloco-add'>
               <h3>$ 7,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
@@ -310,6 +325,57 @@ function Sorvetes() {
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
+          <div className='menu-comerce'>
+          
+          <IoArrowRedo class="arrow" size={30} color="white" />
+          <h1 id='doces'>Pasteis doces</h1></div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Brigadeiro</h3></div>
+            <div className='bloco-body-container'><img src={pastelBrigadeiro}></img></div>
+            <div className='bloco-descricao'><p>Pastel de chocolate e brigadeiro</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Prestigio</h3></div>
+            <div className='bloco-body-container'><img src={pastelPrestigio}></img></div>
+            <div className='bloco-descricao'><p>Pastel de chocolate, coco ralado e leite condensado.</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Banana</h3></div>
+            <div className='bloco-body-container'><img src={pastelBanana}></img></div>
+            <div className='bloco-descricao'><p>Pastel de banana com queijo mussarela e leite condensado.</p></div>
+            <div className='bloco-add'>
+              <h3>$ 7,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>ChocoBanana</h3></div>
+            <div className='bloco-body-container'><img src={pastelChocoBanana}></img></div>
+            <div className='bloco-descricao'><p>Pastel de queijo mussarela, banana e chocolate.</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Romeu e julieta</h3></div>
+            <div className='bloco-body-container'><img src={pastelRomeu}></img></div>
+            <div className='bloco-descricao'><p>Pastel de queijo mussarela e goiabada.</p></div>
+            <div className='bloco-add'>
+              <h3>$ 8,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+
+
           <footer className='rodape'>
              <h1>Emanuel Hitallo © 2023</h1>
              <h1>Engenheiro de Software</h1>

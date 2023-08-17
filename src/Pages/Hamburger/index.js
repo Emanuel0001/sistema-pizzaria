@@ -12,7 +12,7 @@ import { IoArrowRedo } from "react-icons/io5";
 import { IoMdAddCircle } from "react-icons/io";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { BsCheckCircleFill } from "react-icons/bs";
-
+import { GiFrenchFries } from "react-icons/gi";
 import "./style.css";
 import Imagem from "../../images/lanche-hamburger.jpg";
 import hamburger from "../../images/lanche-hamburger.jpg";
@@ -134,6 +134,9 @@ function Hamburger() {
           </Link>
           <Link to="/pasteis">
             <GiBreadSlice size={40} />
+          </Link>
+          <Link to="/porcoes">
+            <GiFrenchFries size={40} />
           </Link>
         </div>
       </div>

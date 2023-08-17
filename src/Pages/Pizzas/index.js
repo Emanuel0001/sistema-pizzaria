@@ -13,6 +13,7 @@ import { IoArrowRedo } from 'react-icons/io5'
 import { IoMdAddCircle } from 'react-icons/io'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
 import { BsCheckCircleFill } from 'react-icons/bs'
+import { GiFrenchFries } from "react-icons/gi";
 
 import Imagem from '../../images/pizza-Bolonhesa.jpg'
 import pizzaBolonhesa from '../../images/pizza-Bolonhesa.jpg'
@@ -33,7 +34,8 @@ import pizzaToscana from '../../images/pizzaCalabresa.jpeg'
 import pizzaBananaChocolate from '../../images/pizza-de-chocolate-e-banana.jpeg'
 import pizzaPrestigio from '../../images/pizza-prestigio.jpeg'
 import pizzaRomeuJulieta from '../../images/Pizza-de-Roemu-e-Julieta-Imagem-por-Pizzatec.jpeg'
-
+import pizzaPeru from '../../images/pizzaPeitoPeru.jpg';
+import pizzaBacon from '../../images/pizzaBacon.jpg'
 import './style.css'
 function Pizza() {
   let subtitle;
@@ -144,6 +146,8 @@ function Pizza() {
           <Link to='/hamburger'><FaHamburger size={40} /></Link>
           <Link to='/sucos'><BiCoffeeTogo size={40} /></Link>
           <Link to='/pasteis'><GiBreadSlice size={40} /></Link>
+          <Link to="/porcoes"> <GiFrenchFries size={40} /></Link>
+
         </div>
       </div>
       <div className='menu-princial'>
@@ -161,9 +165,27 @@ function Pizza() {
             <div className='bloco'>
             <div className='bloco-title'> <h3>Frango com Catupiry</h3></div>
             <div className='bloco-body-container'><img src={pizzaBolonhesa}></img></div>
-            <div className='bloco-descricao'><p>Queijo Mussarela e tomate, uma delicia!</p></div>
+            <div className='bloco-descricao'><p>Queijo Mussarela, frango desfiado, milho e catupiry e tomate, uma delicia!</p></div>
             <div className='bloco-add'>
               <h3>G: $43,00 & P: $33,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Peito de peru</h3></div>
+            <div className='bloco-body-container'><img src={pizzaPeru}></img></div>
+            <div className='bloco-descricao'><p>Queijo Mussarela, peito de peru, milho e catupiry, uma delicia!</p></div>
+            <div className='bloco-add'>
+              <h3>G: $45,00 & P: $35,00</h3>
+              <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
+            </div>
+          </div>
+          <div className='bloco'>
+            <div className='bloco-title'> <h3>Bacon</h3></div>
+            <div className='bloco-body-container'><img src={pizzaBacon}></img></div>
+            <div className='bloco-descricao'><p>Queijo Mussarela e bacon, uma delicia!</p></div>
+            <div className='bloco-add'>
+              <h3>G: $42,00 & P: $32,00</h3>
               <IoMdAddCircle class="icone-add" onClick={openModalAddItem} size={50} color="yellow" />
             </div>
           </div>
